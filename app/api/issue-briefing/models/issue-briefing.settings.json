@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issue_briefings",
+  "info": {
+    "name": "Issue Briefing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "thesis": {
+      "type": "string",
+      "required": true
+    },
+    "thesis_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "explainer": {
+      "type": "richtext",
+      "required": true
+    },
+    "clear_policy_ask": {
+      "type": "richtext",
+      "required": true
+    },
+    "the_case_for": {
+      "type": "richtext"
+    },
+    "sample_social_media_post": {
+      "type": "richtext",
+      "required": true
+    },
+    "additional_policy_resources": {
+      "type": "richtext"
+    }
+  }
+}

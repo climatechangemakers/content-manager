@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issue_facts",
+  "info": {
+    "name": "Issue Fact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fact": {
+      "type": "string",
+      "required": true
+    },
+    "issue_frame": {
+      "model": "issue-frame"
+    },
+    "issue_briefing": {
+      "model": "issue-briefing"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/issue-briefings",
+      "handler": "issue-briefing.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/issue-briefings/count",
+      "handler": "issue-briefing.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/issue-briefings/:id",
+      "handler": "issue-briefing.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/issue-briefings",
+      "handler": "issue-briefing.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/issue-briefings/:id",
+      "handler": "issue-briefing.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/issue-briefings/:id",
+      "handler": "issue-briefing.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

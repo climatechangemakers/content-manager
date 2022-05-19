@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issue_frames",
+  "info": {
+    "name": "Issue Frame"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
